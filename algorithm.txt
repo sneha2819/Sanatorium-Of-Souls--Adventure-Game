@@ -1,0 +1,48 @@
+ALGORITHM 
+
+1. Make a class hauntedhospitalgame
+
+2. Initialize binary tree with three rooms, Operation Theatre as root node, Patient’s room as left child and Doctor’s room as right child.
+void hauntedhospitalgame() {
+    rootNode = new BinaryTreeNode("Operation Theatre");
+    rootNode.left = new BinaryTreeNode("Patients Room");
+    rootNode.right = new BinaryTreeNode("Doctor's Room");
+    inventory = new Inventory(); 
+}
+
+3. Game begins using function StartGame()
+
+4. Game proceeds according to player’s choices
+    4.1 if player selects correct choices{ continue game; }
+    4.2 else {
+          System.out.println(“Game over”);
+          System.out.println(“Restart?(yes/no)”); }
+          Take user input, exit or restart the game.
+
+5. Once player reaches end of game, they win
+    5.1 System.out.println(“You win! Thank you for playing”);
+
+6. Initially a choice is given between ‘escape’ and ‘inventory’
+if (input.equals("escape")GAME OVER
+else if(input.equals("inventory"))
+Game proceeds with more choices between 1. Help them and 2. Ignore.
+
+7. score=1 if we choose 1.
+Flag=1 if we choose 2
+Else invalid input
+
+8. System.out.println("You enter the second room.");
+Followed by same choices
+case 1:System.out.println("Game Over. Thank you for playing!");
+
+case 2:
+System.out.println("However, the blood is still flowing, and you must hide! Where do you want to hide? \n1. Cupboard \n2. Under Table");
+
+    8.1 for case1 :we proceed and for case 2: GAME OVER
+    Choice is given to choose 3 different weapons axe, hammer,blowtorch
+    If ch=blowtorch
+        score=2 and the game proceeds by giving two more choices
+        System.out.println("What do you do? \n1. Save the doctor (1) \n2. Let the doctor die (2)");
+        ch=1; game over , ch=2 YOU WIN;
+
+9. In the main class the functions are called.
